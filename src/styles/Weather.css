@@ -1,0 +1,84 @@
+/* Weather Page Styles */
+
+/* General page layout */
+.weather-page {
+    text-align: center;
+    padding: 40px;
+    margin: 50px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  /* Weather section styling */
+  .weather-section {
+    margin: 20px 0;
+  }
+  
+  .weather-section h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .weather-section p {
+    font-size: 18px;
+    color: #34495e;
+    margin: 5px 0;
+  }
+  
+  /* Dynamic background for different weather conditions */
+  .clear {
+    background-image: url('https://example.com/sunny.jpg'); /* Replace with your sunny image */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .rainy {
+    background-image: url('https://example.com/rain.jpg'); /* Replace with your rain image */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .cloudy {
+    background-image: url('https://example.com/cloudy.jpg'); /* Replace with your cloudy image */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .snowy {
+    background-image: url('https://example.com/snow.jpg'); /* Replace with your snow image */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Adjust text visibility on images */
+  .weather-page {
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Button style (if needed for future) */
+  button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .weather-page {
+      padding: 20px;
+      max-width: 90%;
+    }
+  }
+  

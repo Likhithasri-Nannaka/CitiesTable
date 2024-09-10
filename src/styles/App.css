@@ -1,0 +1,27 @@
+/* styles/App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f7;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.header {
+  background-color: #3498db;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 0;
+}
