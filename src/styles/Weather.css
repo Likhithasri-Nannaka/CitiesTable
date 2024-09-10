@@ -1,84 +1,118 @@
-/* Weather Page Styles */
-
-/* General page layout */
-.weather-page {
+/* Base styles for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f7;
+    color: #333;
+  }
+  
+  /* Weather page container */
+  .weather-page {
     text-align: center;
     padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
     margin: 50px auto;
     max-width: 600px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.9);
+    transition: background-color 0.5s ease;
   }
   
-  /* Weather section styling */
-  .weather-section {
-    margin: 20px 0;
-  }
-  
-  .weather-section h2 {
-    font-size: 24px;
-    color: #2c3e50;
-    margin-bottom: 10px;
-  }
-  
-  .weather-section p {
-    font-size: 18px;
-    color: #34495e;
-    margin: 5px 0;
-  }
-  
-  /* Dynamic background for different weather conditions */
-  .clear {
-    background-image: url('https://example.com/sunny.jpg'); /* Replace with your sunny image */
+  /* Dynamic backgrounds for different weather conditions */
+  .sunny {
+    background-image: url('https://example.com/sunny.jpg'); /* Replace with actual image URL */
     background-size: cover;
     background-position: center;
   }
   
   .rainy {
-    background-image: url('https://example.com/rain.jpg'); /* Replace with your rain image */
+    background-image: url('https://example.com/rain.jpg'); /* Replace with actual image URL */
     background-size: cover;
     background-position: center;
   }
   
   .cloudy {
-    background-image: url('https://example.com/cloudy.jpg'); /* Replace with your cloudy image */
+    background-image: url('https://example.com/cloudy.jpg'); /* Replace with actual image URL */
     background-size: cover;
     background-position: center;
   }
   
   .snowy {
-    background-image: url('https://example.com/snow.jpg'); /* Replace with your snow image */
+    background-image: url('https://example.com/snow.jpg'); /* Replace with actual image URL */
     background-size: cover;
     background-position: center;
   }
   
-  /* Adjust text visibility on images */
-  .weather-page {
-    color: #fff;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  .mist {
+    background-image: url('https://example.com/mist.jpg'); /* Replace with actual image URL */
+    background-size: cover;
+    background-position: center;
   }
   
-  /* Button style (if needed for future) */
-  button {
-    background-color: #3498db;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  .default-bg {
+    background-color: #f0f4f7;
   }
   
-  button:hover {
-    background-color: #2980b9;
+  /* Weather icon styling */
+  .weather-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
   }
   
-  /* Responsive adjustments */
+  /* Temperature styles */
+  .temperature {
+    font-size: 2.0em;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-bottom: 20px;
+  }
+  
+  .weather-detail {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  /* Loading spinner */
+  .loading-spinner {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Responsive styles */
   @media (max-width: 768px) {
     .weather-page {
       padding: 20px;
       max-width: 90%;
+    }
+  
+    .temperature {
+      font-size: 3em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .weather-page h1 {
+      font-size: 1.8em;
+    }
+  
+    .temperature {
+      font-size: 2.5em;
     }
   }
   
